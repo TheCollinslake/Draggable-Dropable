@@ -4,11 +4,20 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
-        
-
+        <script type="text/javascript" src="scripts.js"></script>
+        <script>$( function() {
+    $( "#draggable" ).draggable();
+  } );</script>
     </head>
     
     <body>
+        <p id=draggable>x</p>
+        <h2>A html javascript tic-tac-toe game.</h2>
+        <h4>Use the buttons below to generat the X's and O's they will apper below the game board.</h4>
+        <button onclick="createX()">Create an  X</button> 
+        <br>
+        <button onclick="createO()">Create an  O</button>
+        
         <table>
             <tr>
                 <td id="droppable"></td>
